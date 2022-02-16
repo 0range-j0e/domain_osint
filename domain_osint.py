@@ -1,6 +1,10 @@
 import os
 
-# Perform OSINT on a given domain name using whois, dig and nslookup. Output results to a file with a name of your choosing.
+
+''' Perform OSINT on a given domain name using whois, dig and nslookup. Output results to a file with a name of your choosing. '''
+__author__ = "0range-j0e"
+__copyright__ = "0range-j0e"
+__version__ =  "1.0"
 
 
 # User provides URL.
