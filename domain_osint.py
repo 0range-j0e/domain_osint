@@ -10,12 +10,13 @@ __version__ =  "1.0"
 
 parser = argparse.ArgumentParser(description="Perform OSINT on a given domain name using WHOIS, dig and nslookup. Output results to a file (optional).")
 parser.add_argument("domain", type=str, help="Domain to research")
-parser.add_argument("-f", "--filename", type=str, help="Choose filename to store output (default: results.txt)", 
-                    default="results.txt")
+parser.add_argument("-f", "--filename", type=str, help="Choose filename to store output (default is domain name)")
 parser.add_argument("-s", "--separate", action="store_true", 
                     help="Separate WHOIS, dig, and nslookup outputs to separate files (ex: filename_dig, filename_whois, etc)")
 args = parser.parse_args()
 
+if args.filename is None:
+    args.filename = args.domain
 
 # Check if designated filename(s) exists in current directory.
 if args.separate:
