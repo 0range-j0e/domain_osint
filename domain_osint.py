@@ -4,7 +4,6 @@ import argparse
 
 ''' Perform OSINT on a given domain name using whois, dig and nslookup. Output results to a file with a name of your choosing (optional). '''
 __author__ = "Orange-Joe"
-__copyright__ = "Orange-Joe"
 __version__ =  "1.0"
 
 
